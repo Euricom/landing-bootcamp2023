@@ -1,0 +1,15 @@
+.base {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.inactive {
+  composes: base;
+  background-color: red;
+}
+
+.active {
+  composes: base;
+  background-color: green;
+}

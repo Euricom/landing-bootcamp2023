@@ -1,0 +1,11 @@
+.base {
+  border-radius: 0;
+  span {
+    font-size: 48px;
+  }
+}
+
+.circle {
+  composes: base;
+  border-radius: 50%;
+}

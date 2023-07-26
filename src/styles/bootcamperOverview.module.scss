@@ -1,0 +1,55 @@
+.overview-wrapper {
+  width: inherit;
+  height: inherit;
+  background-color: #062a30;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  justify-content: center;
+
+  padding: 112px 166px 160px 166px;
+}
+
+.bootcamper-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 325px;
+  padding: 0 17px;
+  flex-basis: 33.33%;
+  max-width: 325px;
+
+  img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 23px;
+  }
+
+  h3 {
+    margin: 0 0 16px 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

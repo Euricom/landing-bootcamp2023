@@ -1,0 +1,53 @@
+.base {
+  padding: 10px 36px;
+  border-radius: 25px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  /* color: ${({ color }) => color}; */
+  cursor: pointer;
+  /*   background-color: ${(props) => props.backgroundColor};
+ */
+  background-color: darken(#fff, 5);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.inline {
+  composes: base;
+  display: inline-flex;
+}
+
+.white {
+  composes: base;
+  color: #062a30;
+  background-color: #fff;
+}
+
+.green {
+  composes: base;
+  color: #fff;
+  background-color: #5cc73b;
+}
+
+.blue {
+  composes: base;
+  color: #fff;
+  background-color: #062a30;
+}
+
+.inline-white {
+  composes: inline white;
+}
+.inline-blue {
+  composes: inline blue;
+}
+.inline-green {
+  composes: inline green;
+}
