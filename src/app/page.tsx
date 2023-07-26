@@ -6,24 +6,46 @@ import Steps from "@/sections/Steps";
 import BootcamperOverview from "@/sections/BootcamperOverview";
 import BootcamperDetail from "@/sections/BootcamperDetail/BootcamperDetail";
 import Shortlist from "@/sections/Shortlist";
+import BootcampersJSON from "@/app/bootcampers.json";
 
 type Shortlist = number[];
 type Bootcamper = {
   id: number;
-  name: string;
   imageUrl: string;
+  name: string;
 };
+
 export default function Home() {
   const bootcampers: Bootcamper[] = [
     {
-      id: 1,
-      name: "Peter Cosemans",
-      imageUrl: "/peter.jpeg",
+      id: BootcampersJSON["bjorn-felix"].id,
+      imageUrl: BootcampersJSON["bjorn-felix"].imageUrl,
+      name: BootcampersJSON["bjorn-felix"].name,
     },
     {
-      id: 2,
-      name: "Stijn Menu",
-      imageUrl: "/peter.jpeg",
+      id: BootcampersJSON["kobe-brants"].id,
+      imageUrl: BootcampersJSON["kobe-brants"].imageUrl,
+      name: BootcampersJSON["kobe-brants"].name,
+    },
+    {
+      id: BootcampersJSON["kobe-dehandschutter"].id,
+      imageUrl: BootcampersJSON["kobe-dehandschutter"].imageUrl,
+      name: BootcampersJSON["kobe-dehandschutter"].name,
+    },
+    {
+      id: BootcampersJSON["liese-cordeyn"].id,
+      imageUrl: BootcampersJSON["liese-cordeyn"].imageUrl,
+      name: BootcampersJSON["liese-cordeyn"].name,
+    },
+    {
+      id: BootcampersJSON["maarten-salien"].id,
+      imageUrl: BootcampersJSON["maarten-salien"].imageUrl,
+      name: BootcampersJSON["maarten-salien"].name,
+    },
+    {
+      id: BootcampersJSON["toon-van-hoye"].id,
+      imageUrl: BootcampersJSON["toon-van-hoye"].imageUrl,
+      name: BootcampersJSON["toon-van-hoye"].name,
     },
   ];
   const [shortlist, setShortlist] = useState<Shortlist>([]);

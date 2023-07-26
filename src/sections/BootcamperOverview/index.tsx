@@ -8,12 +8,12 @@ function BootcamperOverview() {
     <>
       <div className="content-wrapper">
         <div className={styles["overview-wrapper"]}>
-          <Bootcamper jsonId="peter-cosemans" />
-          <Bootcamper jsonId="stijn-menu" />
-          <Bootcamper jsonId="peter-cosemans" />
-          <Bootcamper jsonId="stijn-menu" />
-          <Bootcamper jsonId="peter-cosemans" />
-          <Bootcamper jsonId="stijn-menu" />
+          <Bootcamper jsonId="bjorn-felix" />
+          <Bootcamper jsonId="kobe-brants" />
+          <Bootcamper jsonId="kobe-dehandschutter" />
+          <Bootcamper jsonId="liese-cordeyn" />
+          <Bootcamper jsonId="maarten-salien" />
+          <Bootcamper jsonId="toon-van-hoye" />
         </div>
       </div>
     </>

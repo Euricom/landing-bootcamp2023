@@ -1,4 +1,10 @@
-type JsonId = "peter-cosemans" | "stijn-menu";
+type JsonId =
+  | "bjorn-felix"
+  | "kobe-brants"
+  | "kobe-dehandschutter"
+  | "liese-cordeyn"
+  | "maarten-salien"
+  | "toon-van-hoye";
 
 export interface BootcamperDetailProps {
   jsonId: JsonId;

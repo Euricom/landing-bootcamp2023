@@ -1,7 +1,3 @@
-import Button from "@/components/Button";
-import Toggle from "../../components/Toggle";
-import CustomImage from "@/components/CustomImage";
-import styles from "@/styles/bootcamperDetail.module.scss";
 import Bootcamper from "./bootcamper";
 
 type Shortlist = number[];
@@ -27,13 +23,35 @@ function BootcamperDetail({
     <>
       <div className="content-wrapper">
         <Bootcamper
-          jsonId="peter-cosemans"
+          jsonId="bjorn-felix"
           shortlisted={!!shortlist.find((item) => item === 1)}
           onToggle={addOrRemoveFromShortlist}
         />
         <Bootcamper
-          jsonId="stijn-menu"
-          shortlisted={!!shortlist.find((item) => item === 1)}
+          jsonId="kobe-brants"
+          shortlisted={!!shortlist.find((item) => item === 2)}
+          onToggle={addOrRemoveFromShortlist}
+          isDark
+        />
+        <Bootcamper
+          jsonId="kobe-dehandschutter"
+          shortlisted={!!shortlist.find((item) => item === 3)}
+          onToggle={addOrRemoveFromShortlist}
+        />
+        <Bootcamper
+          jsonId="liese-cordeyn"
+          shortlisted={!!shortlist.find((item) => item === 4)}
+          onToggle={addOrRemoveFromShortlist}
+          isDark
+        />
+        <Bootcamper
+          jsonId="maarten-salien"
+          shortlisted={!!shortlist.find((item) => item === 5)}
+          onToggle={addOrRemoveFromShortlist}
+        />
+        <Bootcamper
+          jsonId="toon-van-hoye"
+          shortlisted={!!shortlist.find((item) => item === 6)}
           onToggle={addOrRemoveFromShortlist}
           isDark
         />
