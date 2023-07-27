@@ -5,12 +5,17 @@ type ButtonVariant = "green" | "blue" | "white";
 
 interface ButtonProps {
   variant: ButtonVariant;
+  type?: "submit";
   fullWidth?: boolean;
   children: React.ReactNode;
 }
-function Button({ variant, children, fullWidth }: ButtonProps) {
-  const className = fullWidth ? styles[variant] : styles[`inline-${variant}`];
-  return <div className={className}>{children}</div>;
+function Button({ variant, children, type }: ButtonProps) {
+  const className = styles[`inline-${variant}`];
+  return (
+    <button type={type} className={className}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;

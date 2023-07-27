@@ -3,7 +3,7 @@ import Bootcamper from "./bootcamper";
 type Shortlist = number[];
 interface BootcamperDetailProps {
   shortlist: Shortlist;
-  onChangeShortlist: (id: number, value: boolean, sl: Shortlist) => {};
+  onChangeShortlist: (id: number, value: boolean, sl: Shortlist) => void;
 }
 function BootcamperDetail({
   shortlist,
@@ -12,11 +12,11 @@ function BootcamperDetail({
   const addOrRemoveFromShortlist = (id: number, value: boolean): void => {
     if (shortlist.find((item) => item === id)) {
       const sl = shortlist.filter((item) => item !== id);
-      onChangeShortlist(id, value, sl);
+      return onChangeShortlist(id, value, sl);
     }
     const sl = [...shortlist, id];
 
-    onChangeShortlist(id, value, sl);
+    return onChangeShortlist(id, value, sl);
   };
 
   return (

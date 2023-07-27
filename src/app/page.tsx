@@ -6,7 +6,9 @@ import Steps from "@/sections/Steps";
 import BootcamperOverview from "@/sections/BootcamperOverview";
 import BootcamperDetail from "@/sections/BootcamperDetail/BootcamperDetail";
 import Shortlist from "@/sections/Shortlist";
+import Contact from "@/sections/Contact";
 import BootcampersJSON from "@/app/bootcampers.json";
+import { addRecord } from "@/server/api";
 
 type Shortlist = number[];
 type Bootcamper = {
@@ -58,13 +60,14 @@ export default function Home() {
     const bootcamper = bootcampers.find(
       (bootcamper) => bootcamper.id === id
     )?.name;
-    /* await axios.post("http://localhost:4000/new-record", {
+    setShortlist(newShortlist);
+
+    await addRecord({
       id,
       action: !!value
         ? `Klant heeft ${bootcamper} ge-shortlist`
         : `Klant heeft ${bootcamper} van zijn shortlist gehaald`,
-    }); */
-    setShortlist(newShortlist);
+    });
   };
   const mapShortList = (): Bootcamper[] => {
     return shortlist
@@ -81,6 +84,7 @@ export default function Home() {
         onChangeShortlist={handleChangeShortlist}
       />
       <Shortlist shortlist={mapShortList()} />
+      <Contact shortlist={mapShortList()} />
     </main>
   );
 }

@@ -55,6 +55,8 @@
 .interest-wrapper {
   display: flex;
   flex-direction: row;
+  column-gap: 40px;
+  align-items: center;
 
   span {
     font-family: Poppins;

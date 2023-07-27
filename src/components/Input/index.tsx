@@ -1,5 +1,11 @@
 import styles from "./input.module.scss";
-function Input({ type, placeholder, value, onChange }) {
+interface InputProps {
+  type: string;
+  placeholder: string;
+  value: string;
+  onChange: (val: string) => void | {};
+}
+function Input({ type, placeholder, value, onChange }: InputProps) {
   return (
     <input
       className={styles.base}

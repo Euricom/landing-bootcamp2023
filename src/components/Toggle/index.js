@@ -10,7 +10,9 @@ function Toggle({ id, value, onChange }) {
     <div
       className={styles[activated ? "active" : "inactive"]}
       onClick={() => onChange(id, !value)}
-    />
+    >
+      <div className={styles.switch} />
+    </div>
   );
 }
 
