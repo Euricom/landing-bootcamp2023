@@ -9,10 +9,7 @@
 
   border: none;
 
-  /* color: ${({ color }) => color}; */
   cursor: pointer;
-  /*   background-color: ${(props) => props.backgroundColor};
- */
   background-color: darken(#fff, 5);
   font-size: 22px;
   font-weight: 600;
@@ -25,30 +22,30 @@
   max-width: 270px;
 }
 
-.white {
+.w {
   composes: base;
   color: #062a30;
   background-color: #fff;
 }
 
-.green {
+.g {
   composes: base;
   color: #fff;
   background-color: #5cc73b;
 }
 
-.blue {
+.b {
   composes: base;
   color: #fff;
   background-color: #062a30;
 }
 
 .inline-white {
-  composes: inline white;
+  composes: inline w;
 }
 .inline-blue {
-  composes: inline blue;
+  composes: inline b;
 }
 .inline-green {
-  composes: inline green;
+  composes: inline g;
 }
