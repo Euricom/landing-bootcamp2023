@@ -8,11 +8,12 @@ interface ButtonProps {
   type?: "submit";
   fullWidth?: boolean;
   children: React.ReactNode;
+  onClick: () => void;
 }
-function Button({ variant, children, type }: ButtonProps) {
+function Button({ variant, children, type, onClick }: ButtonProps) {
   const className = styles[`inline-${variant}`];
   return (
-    <button type={type} className={className}>
+    <button type={type} className={className} onClick={onClick}>
       {children}
     </button>
   );

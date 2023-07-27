@@ -1,5 +1,5 @@
 .base {
-  padding: 10px 36px;
+  padding: 10px 22px;
   border-radius: 25px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.15);
 
@@ -14,12 +14,16 @@
   font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
+
+  > img {
+    margin-right: 10px;
+  }
 }
 
 .inline {
   composes: base;
   display: inline-flex;
-  max-width: 270px;
+  max-width: 257px;
 }
 
 .w {

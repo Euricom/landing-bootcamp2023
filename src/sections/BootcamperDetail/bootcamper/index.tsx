@@ -12,6 +12,9 @@ const Bootcamper = ({
   isDark,
 }: BootcamperDetailProps) => {
   const bootcamper = bootcamperJSON[jsonId];
+  const handleClick = () => {
+    window.open(bootcamper.vitarum, "_blank");
+  };
   return (
     <div className={styles[`detail-wrapper-${isDark ? "dark" : "light"}`]}>
       <CustomImage
@@ -23,7 +26,14 @@ const Bootcamper = ({
         <h3>{bootcamper.name}</h3>
         <span>{bootcamper.title}</span>
         <span>{bootcamper.education}</span>
-        <Button variant={isDark ? "white" : "blue"}>Bekijk mijn CV</Button>
+        <Button variant={isDark ? "white" : "blue"} onClick={handleClick}>
+          <CustomImage
+            imageUrl="/vitarum.svg"
+            width={26}
+            alt="Logo of Vitarum"
+          />
+          Bekijk mijn CV
+        </Button>
       </div>
       <div className={styles.description}>
         <p>{bootcamper.description}</p>

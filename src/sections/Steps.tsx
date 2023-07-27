@@ -30,6 +30,9 @@ function StepsSection() {
               />
             ))}
           </div>
+          <a href="https://www.euri.com/bootcamp" target="_blank">
+            Read more!
+          </a>
         </div>
       </div>
     </>
