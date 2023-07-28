@@ -36,7 +36,7 @@ export async function sendEmail(data: ContactForm) {
   const msg = {
     to: "thomas.claessens@euri.com", // Change to your recipient
     from: "interview-request@landingbootcamp2023.com", // Change to your verified sender
-    subject: "Sending with SendGrid is Fun",
+    subject: "Action needed: Nieuw Interview Request",
     html: `
       <h1>Nieuw Interview Request</h1>
       <p>Beste Practice Managers,<p>
