@@ -4,6 +4,7 @@ import CustomImage from "@/components/CustomImage";
 import styles from "@/styles/bootcamperDetail.module.scss";
 import bootcamperJSON from "@/app/bootcampers.json";
 import { BootcamperDetailProps } from "@/sections/types";
+import { addRecord } from "@/server/api";
 
 const Bootcamper = ({
   jsonId,
@@ -12,8 +13,12 @@ const Bootcamper = ({
   isDark,
 }: BootcamperDetailProps) => {
   const bootcamper = bootcamperJSON[jsonId];
-  const handleClick = () => {
+  const handleClick = async () => {
     window.open(bootcamper.vitarum, "_blank");
+    await addRecord({
+      id: bootcamper.id,
+      action: `Klant heeft ${bootcamper.name} zijn CV opgevraagd`,
+    });
   };
   return (
     <div className={styles[`detail-wrapper-${isDark ? "dark" : "light"}`]}>

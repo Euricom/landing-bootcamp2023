@@ -3,9 +3,10 @@ interface InputProps {
   type: string;
   placeholder: string;
   value: string;
+  required: boolean;
   onChange: (val: string) => void | {};
 }
-function Input({ type, placeholder, value, onChange }: InputProps) {
+function Input({ type, placeholder, value, required, onChange }: InputProps) {
   return (
     <input
       className={styles.base}
@@ -13,6 +14,7 @@ function Input({ type, placeholder, value, onChange }: InputProps) {
       value={value}
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
+      required={required}
     />
   );
 }
