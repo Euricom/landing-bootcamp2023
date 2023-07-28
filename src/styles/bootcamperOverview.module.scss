@@ -9,6 +9,14 @@
   justify-content: center;
 
   padding: 112px 166px 160px 166px;
+
+  @media (max-width: 1000px) {
+    padding: 60px 40px;
+    row-gap: 0;
+    > div {
+      flex-direction: column;
+    }
+  }
 }
 
 .bootcamper-profile {
@@ -22,11 +30,14 @@
   flex-basis: 33.33%;
   max-width: 325px;
 
-  img {
+  > div {
     width: 170px;
     height: 170px;
-    border-radius: 50%;
     margin-bottom: 23px;
+    position: relative;
+    img {
+      border-radius: 50%;
+    }
   }
 
   h3 {
@@ -49,5 +60,24 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 60px;
+    max-width: 250px;
+    > div {
+      width: 120px;
+      height: 120px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 }

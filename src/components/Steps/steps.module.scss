@@ -5,8 +5,15 @@
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 1000px) {
+    width: 250px;
+  }
   &:not(:last-of-type) {
     margin-right: 55px;
+
+    @media (max-width: 1000px) {
+      margin-right: 0;
+    }
   }
 
   p {
@@ -18,6 +25,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media (max-width: 1000px) {
+      font-size: 12px;
+    }
   }
 }
 .circle {
@@ -32,5 +43,14 @@
   border: 4px solid #000;
   span {
     font-size: 48px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    > span {
+      font-size: 26px;
+    }
   }
 }

@@ -7,11 +7,13 @@ const Bootcamper = ({ jsonId }: BootcamperOverviewProps) => {
   const bootcamper = bootcamperJSON[jsonId];
   return (
     <div className={styles["bootcamper-profile"]}>
-      <CustomImage
-        imageUrl={bootcamper.imageUrl}
-        width={170}
-        alt={`A Profile of ${bootcamper.name}`}
-      />
+      <div>
+        <CustomImage
+          imageUrl={bootcamper.imageUrl}
+          layout="fill"
+          alt={`A Profile of ${bootcamper.name}`}
+        />
+      </div>
       <h3>{bootcamper.name}</h3>
       <p>{bootcamper.overview}</p>
     </div>

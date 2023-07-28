@@ -8,6 +8,16 @@
     right: 125px;
     width: 260px;
   }
+
+  @media (max-width: 1000px) {
+    padding: 40px 40px 140px 40px;
+
+    > img {
+      left: 50%;
+      transform: translateX(-50%);
+      top: -70px;
+    }
+  }
 }
 
 .intro {
@@ -35,6 +45,21 @@
   > div {
     align-self: flex-start;
   }
+
+  @media (max-width: 1000px) {
+    padding-top: 170px;
+    text-align: center;
+    h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 17px;
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
 
 .description {
@@ -46,6 +71,14 @@
     margin-bottom: 18px;
     font-weight: 300;
     font-size: 22px;
+  }
+
+  @media (max-width: 1000px) {
+    p {
+      font-size: 15px;
+      line-height: 2.2;
+      text-align: justify;
+    }
   }
 }
 
@@ -60,6 +93,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+  }
+
+  @media (max-width: 1000px) {
+    column-gap: 20px;
+    span {
+      font-size: 20px;
+    }
   }
 }
 

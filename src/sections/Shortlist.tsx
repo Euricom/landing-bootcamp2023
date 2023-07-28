@@ -14,11 +14,14 @@ function Shortlist({ shortlist }: ShortlistProps) {
     if (shortlist)
       return shortlist.map((item) => (
         <div className={styles["shortlist-item"]} key={item.id}>
-          <CustomImage
-            width={72}
-            imageUrl={item.imageUrl}
-            alt={`Profile of ${item.name}`}
-          />
+          <div>
+            <CustomImage
+              layout="fill"
+              imageUrl={item.imageUrl}
+              alt={`Profile of ${item.name}`}
+            />
+          </div>
+
           <span>{item.name}</span>
         </div>
       ));

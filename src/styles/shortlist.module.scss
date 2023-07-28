@@ -3,6 +3,10 @@
   height: inherit;
 
   padding: 32px 134px 156px 134px;
+
+  @media (max-width: 1000px) {
+    padding: 40px;
+  }
 }
 
 .shortlist {
@@ -11,6 +15,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 45px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .shortlist-item {
@@ -21,13 +29,17 @@
   display: flex;
   flex-direction: row;
   padding-left: 32px;
+  box-sizing: border-box;
   align-items: center;
 
-  img {
+  > div {
     width: 72px;
     height: 72px;
-    border-radius: 50%;
+    position: relative;
     margin-right: 57px;
+    img {
+      border-radius: 50%;
+    }
   }
 
   span {
@@ -37,5 +49,18 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: 70px;
+    > div {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    span {
+      font-size: 20px;
+    }
   }
 }

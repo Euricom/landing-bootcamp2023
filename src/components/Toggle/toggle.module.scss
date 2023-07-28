@@ -10,6 +10,12 @@
 
   box-sizing: border-box;
   padding: 6.5px;
+
+  @media (max-width: 1000px) {
+    width: 102.4px;
+    height: 45.6px;
+    padding: 5.2px;
+  }
 }
 
 .inactive {
@@ -31,4 +37,9 @@
   height: 44px;
   filter: drop-shadow(2px 1px 6px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
+
+  @media (max-width: 1000px) {
+    width: 35.2px;
+    height: 35.2px;
+  }
 }

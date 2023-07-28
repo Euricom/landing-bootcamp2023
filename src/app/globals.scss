@@ -6,6 +6,9 @@
   width: 100vw;
   height: 100vh;
   background-color: #f3f3f3;
+  @media (max-width: 1000px) {
+    height: auto;
+  }
 }
 .content-wrapper {
   display: block;
@@ -20,6 +23,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media (max-width: 1000px) {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
 }
 
 .h2-left {
@@ -31,6 +39,11 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+
+  @media (max-width: 1000px) {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
 }
 .row {
   display: flex;

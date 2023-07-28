@@ -6,7 +6,9 @@ import Image from "next/image";
 interface CustomImageProps {
   imageUrl: string;
   alt: string;
-  width: number;
+  width?: number;
+  layout?: "responsive" | "fill";
+  sizes?: string;
   height?: number;
   isCircle?: boolean;
 }
@@ -14,6 +16,8 @@ const CustomImage = ({
   imageUrl,
   alt,
   width,
+  sizes,
+  layout,
   height,
   isCircle,
 }: CustomImageProps) => {
@@ -23,6 +27,8 @@ const CustomImage = ({
       width={width}
       height={height || width}
       className={className}
+      layout={layout}
+      sizes={sizes}
       src={imageUrl}
       alt={alt}
     />

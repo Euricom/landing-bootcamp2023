@@ -10,8 +10,7 @@ const LandingSection = () => {
         <div className={styles.landing}>
           <a className={styles.logo} href="https://www.euri.com">
             <CustomImage
-              width={190}
-              height={35}
+              layout="fill"
               imageUrl="/logo.svg"
               alt="Logo of Euricom"
             />
@@ -19,11 +18,13 @@ const LandingSection = () => {
           <h1>Meet our Bootcampers</h1>
           <h2>Scroll down to see them in action</h2>
           <div className={styles["arrow-down-icon-wrapper"]}>
-            <CustomImage
-              width={40}
-              imageUrl="/icon-down.svg"
-              alt="Arrow pointing down"
-            />
+            <div>
+              <CustomImage
+                layout="fill"
+                imageUrl="/icon-down.svg"
+                alt="Arrow pointing down"
+              />
+            </div>
           </div>
         </div>
       </div>

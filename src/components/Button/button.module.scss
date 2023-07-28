@@ -24,6 +24,10 @@
   composes: base;
   display: inline-flex;
   max-width: 257px;
+
+  @media (max-width: 1000px) {
+    max-width: unset;
+  }
 }
 
 .w {
