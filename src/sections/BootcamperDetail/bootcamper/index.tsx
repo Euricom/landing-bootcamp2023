@@ -5,6 +5,7 @@ import styles from "@/styles/bootcamperDetail.module.scss";
 import bootcamperJSON from "@/app/bootcampers.json";
 import { BootcamperDetailProps } from "@/sections/types";
 import { addRecord } from "@/server/api";
+import { useSearchParams } from "next/navigation";
 
 const Bootcamper = ({
   jsonId,
@@ -12,12 +13,15 @@ const Bootcamper = ({
   onToggle,
   isDark,
 }: BootcamperDetailProps) => {
+  const searchParams = useSearchParams();
+  const clientName = searchParams.get("firstname") || "Unknown";
   const bootcamper = bootcamperJSON[jsonId];
   const handleClick = async () => {
     window.open(bootcamper.vitarum, "_blank");
     await addRecord({
       id: bootcamper.id,
-      action: `Klant heeft ${bootcamper.name} zijn CV opgevraagd`,
+      clientName,
+      action: `${clientName} heeft de CV van ${bootcamper.name} zijn CV opgevraagd`,
     });
   };
   return (

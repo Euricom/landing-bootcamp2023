@@ -9,6 +9,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY || "");
 type Record = {
   _id?: ObjectId;
   id: number;
+  clientName: string;
   action: string;
 };
 

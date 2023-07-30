@@ -9,6 +9,7 @@ import Shortlist from "@/sections/Shortlist";
 import Contact from "@/sections/Contact";
 import BootcampersJSON from "@/app/bootcampers.json";
 import { addRecord } from "@/server/api";
+import { useSearchParams } from "next/navigation";
 
 type Shortlist = number[];
 type Bootcamper = {
@@ -18,6 +19,9 @@ type Bootcamper = {
 };
 
 export default function Home() {
+  let searchParams = useSearchParams();
+  const clientName = searchParams.get("firstname") || "Unknown";
+
   const bootcampers: Bootcamper[] = [
     {
       id: BootcampersJSON["bjorn-felix"].id,
@@ -64,9 +68,10 @@ export default function Home() {
 
     await addRecord({
       id,
+      clientName,
       action: !!value
-        ? `Klant heeft ${bootcamper} ge-shortlist`
-        : `Klant heeft ${bootcamper} van zijn shortlist gehaald`,
+        ? `${clientName} heeft ${bootcamper} ge-shortlist`
+        : `${clientName} heeft ${bootcamper} van zijn shortlist gehaald`,
     });
   };
   const mapShortList = (): Bootcamper[] => {
