@@ -37,9 +37,12 @@ function Contact({ shortlist }: ContactProps) {
           <h2 className="h2-left">Boek een Interview</h2>
           <div className={styles["contact-form"]}>
             <p>
-              Laat jouw gegevens gerust achter. We noteren jouw gegevens en
-              contacteren je zo snel mogelijk voor een interview met de
-              bootcampers waarvoor u interesse getoont heeft!
+              Laat jouw gegevens gerust achter.
+              <br />
+              <br />
+              We noteren jouw gegevens en contacteren je zo snel mogelijk voor
+              een interview met de bootcampers waarvoor u interesse getoont
+              heeft!
             </p>
             <form onSubmit={handleSubmit}>
               <Input
