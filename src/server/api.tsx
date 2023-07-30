@@ -14,6 +14,7 @@ type Record = {
 };
 
 type ContactForm = {
+  clientName: string;
   companyName: string;
   email: string;
   phoneNumber: string;

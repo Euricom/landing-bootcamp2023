@@ -21,7 +21,7 @@ const Bootcamper = ({
     await addRecord({
       id: bootcamper.id,
       clientName,
-      action: `${clientName} heeft de CV van ${bootcamper.name} zijn CV opgevraagd`,
+      action: `${clientName} heeft de CV van ${bootcamper.name} opgevraagd`,
     });
   };
   return (

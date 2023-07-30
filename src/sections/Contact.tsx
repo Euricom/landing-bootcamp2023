@@ -4,6 +4,7 @@ import Input from "@/components/Input";
 import Button from "@/components/Button";
 import { sendEmail } from "@/server/api";
 import CustomImage from "@/components/CustomImage";
+import { useSearchParams } from "next/navigation";
 
 interface ContactProps {
   shortlist: {
@@ -17,9 +18,13 @@ function Contact({ shortlist }: ContactProps) {
   const [tel, setTel] = useState("");
   const [openModal, setOpenModal] = useState<boolean>(false);
 
+  let searchParams = useSearchParams();
+  const clientName = searchParams.get("firstname") || "Unknown";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     await sendEmail({
+      clientName,
       companyName: name,
       phoneNumber: tel,
       email,
