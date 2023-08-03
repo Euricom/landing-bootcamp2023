@@ -15,11 +15,7 @@ function Shortlist({ shortlist }: ShortlistProps) {
       return shortlist.map((item) => (
         <div className={styles["shortlist-item"]} key={item.id}>
           <div>
-            <CustomImage
-              layout="fill"
-              imageUrl={item.imageUrl}
-              alt={`Profile of ${item.name}`}
-            />
+            <CustomImage layout="fill" imageUrl={item.imageUrl} alt={`Profile of ${item.name}`} />
           </div>
 
           <span>{item.name}</span>
@@ -30,7 +26,7 @@ function Shortlist({ shortlist }: ShortlistProps) {
     <>
       <div className="content-wrapper">
         <div className={styles["shortlist-wrapper"]}>
-          <h2 className="h2-left">Uw Shortlist</h2>
+          <h2 className="h2-left">Your shortlist</h2>
           <div className={styles.shortlist}>{renderShortlistItem()}</div>
         </div>
       </div>

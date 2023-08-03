@@ -39,7 +39,7 @@ function Contact({ shortlist }: ContactProps) {
     <>
       <div className="content-wrapper">
         <div className={styles["contact-wrapper"]}>
-          <h2 className="h2-left">Book an Interview</h2>
+          <h2 className="h2-left">Book an interview</h2>
           <div className={styles["contact-form"]}>
             <p>
               Feel free to leave your details.
@@ -50,8 +50,8 @@ function Contact({ shortlist }: ContactProps) {
             </p>
             <form onSubmit={handleSubmit}>
               <Input type="text" value={name} onChange={setName} placeholder="Company Name" required />
-              <Input type="email" value={email} onChange={setEmail} placeholder="E-mail" required />
-              <Input type="tel" value={tel} onChange={setTel} placeholder="Phone" required />
+              <Input type="email" value={email} onChange={setEmail} placeholder="Email address" required />
+              <Input type="tel" value={tel} onChange={setTel} placeholder="Phone number" required />
               <Button type="submit" variant="green">
                 Send
               </Button>
@@ -63,12 +63,8 @@ function Contact({ shortlist }: ContactProps) {
         <div className={styles["modal-wrapper"]} onClick={() => setOpenModal(false)}>
           <div className={styles.modal}>
             <CustomImage width={96} imageUrl={"/checkmark.svg"} alt="Checkmark Icon" />
-            <h3>Goed Verzonden</h3>
-            <p>
-              We hebben je aanvraag succesvol ontvangen!
-              <br />
-              We nemen zo snel mogelijk contact met je op.
-            </p>
+            <h3>Booking invitation sent successfully</h3>
+            <p>We will contact you as soon as possible.</p>
           </div>
         </div>
       )}

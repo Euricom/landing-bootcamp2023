@@ -35,7 +35,7 @@ const Bootcamper = ({ jsonId, shortlisted, onToggle, isDark }: BootcamperDetailP
         <p>{bootcamper.description}</p>
       </div>
       <div className={styles["interest-wrapper"]}>
-        <span>Interest:</span>
+        <span>add to shortlist:</span>
         <Toggle id={bootcamper.id} value={shortlisted} onChange={onToggle} />
       </div>
     </div>
