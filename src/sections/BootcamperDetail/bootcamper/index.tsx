@@ -7,12 +7,7 @@ import { BootcamperDetailProps } from "@/sections/types";
 import { addRecord } from "@/server/api";
 import { useSearchParams } from "next/navigation";
 
-const Bootcamper = ({
-  jsonId,
-  shortlisted,
-  onToggle,
-  isDark,
-}: BootcamperDetailProps) => {
+const Bootcamper = ({ jsonId, shortlisted, onToggle, isDark }: BootcamperDetailProps) => {
   const searchParams = useSearchParams();
   const clientName = searchParams.get("firstname") || "Unknown";
   const bootcamper = bootcamperJSON[jsonId];
@@ -26,29 +21,21 @@ const Bootcamper = ({
   };
   return (
     <div className={styles[`detail-wrapper-${isDark ? "dark" : "light"}`]}>
-      <CustomImage
-        width={260}
-        imageUrl={bootcamper.imageUrl}
-        alt={`Profile of ${bootcamper.name}`}
-      />
+      <CustomImage width={260} imageUrl={bootcamper.imageUrl} alt={`Profile of ${bootcamper.name}`} />
       <div className={styles.intro}>
         <h3>{bootcamper.name}</h3>
         <span>{bootcamper.title}</span>
         <span>{bootcamper.education}</span>
         <Button variant={isDark ? "white" : "blue"} onClick={handleClick}>
-          <CustomImage
-            imageUrl="/vitarum.svg"
-            width={26}
-            alt="Logo of Vitarum"
-          />
-          Bekijk mijn CV
+          <CustomImage imageUrl="/vitarum.svg" width={26} alt="Logo of Vitarum" />
+          View resume
         </Button>
       </div>
       <div className={styles.description}>
         <p>{bootcamper.description}</p>
       </div>
       <div className={styles["interest-wrapper"]}>
-        <span>Interesse:</span>
+        <span>Interest:</span>
         <Toggle id={bootcamper.id} value={shortlisted} onChange={onToggle} />
       </div>
     </div>

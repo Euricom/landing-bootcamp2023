@@ -2,61 +2,61 @@
   "bjorn-felix": {
     "id": 1,
     "name": "Bjorn Felix",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/bjorn-felix.png",
+    "education": "Professional Bachelor - Computer Software Engineering",
+    "title": "Fullstack .NET Developer - Kruibeke",
+    "overview": "Fullstack .NET Developer - Kruibeke",
+    "vitarum": "https://vitarum.euri.com/#/resumes/public/Bjorn-Felix/4k3nwUmjC",
+    "description": "Allow me to introduce Bjorn, a promising junior full-stack .NET Developer who possesses a lot of potential in the world of software development. Despite being relatively new to the field, Bjorn has already displayed remarkable skills. He has successfully taken on various projects, contributing to both backend and frontend development with a keen eye for detail and a dedication to writing clean, maintainable code.\n\nAs a junior developer, Bjorn is not afraid to ask questions and seek guidance, demonstrating a deep commitment to personal growth and learning from experienced developers around him. His curiosity and enthusiasm for technology make him a quick learner, always eager to explore new concepts, tools, and best practices in the ever-evolving landscape of .NET development.\n\nWhile he may be a junior developer, Bjorn's potential shines through in his adaptability and willingness to take on challenges head-on. He thrives under mentorship, absorbing knowledge like a sponge, and his dedication to honing his craft makes him an invaluable asset to any development team."
   },
   "kobe-brants": {
     "id": 2,
     "name": "Kobe Brants",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/kobe-brants.png",
+    "education": "Professional Bachelor - Applied Informatics -  Application development",
+    "title": "Fullstack .NET Developer - Putte",
+    "overview": "Fullstack .NET Developer - Putte",
+    "vitarum": "https://vitarum.euri.com/#/resumes/public/Kobe-Brants/EJ6JtImiR",
+    "description": "Kobe is Bachelor in Applied Informatics and a highly passionate programmer who never stops learning and experimenting with new technologies. His main focus is full-stack .NET development, and has extensive experience in UI/UX.\n\nHis ambition is to continuously improve his skills and stay up-to-date with the latest industry standards and technologies. Kobe excels in flexibility and ability to tackle challenges. He is asset to any development team."
   },
   "kobe-dehandschutter": {
     "id": 3,
     "name": "Kobe Dehandschutter",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/kobe-dehandschutter.png",
+    "education": "Professional Bachelor - Applied Informatics",
+    "title": "Fullstack Javascript Developer - Deinze",
+    "overview": "Fullstack Javascript Developer - Deinze",
+    "vitarum": "#",
+    "description": "Kobe is a passionate software developer who has gained strong development skills throughout his Bachelor studies in Applied ICT and his internship at Euricom . As a Full Stack developer he joins now Euricom, starting with the Full stack Bootcamp lead by our experts. He will learn all in's and out's about JavaScript and is already experimenting with new SSG technologies such as NextJS.\n\nToday Kobe is ready and motivated to start a first new challenging project."
   },
   "liese-cordeyn": {
     "id": 4,
     "name": "Liese Cordeyn",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/liese-cordeyn.png",
+    "education": "Professional Bachelor - Multimedia en creatieve technologie",
+    "title": "Fullstack Javascript Developer - Halle",
+    "overview": "Fullstack Javascript Developer - Halle",
+    "vitarum": "https://vitarum.euri.com/#/resumes/public/Liese-Cordeyn/Vy0rOImi0",
+    "description": "Liese is a dynamic and driven full-stack JavaScript developer. With a passion for learning, an abundance of patience, and exceptional teamwork skills, Liese is a true asset to any development project. Fearless in the face of challenges, she thrives on exploring new technologies and effortlessly absorbs unfamiliar concepts. Her adaptability and eagerness to grow make her a valuable addition to any development team."
   },
   "maarten-salien": {
     "id": 5,
     "name": "Maarten Salien",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/maarten-salien.png",
+    "education": "Professional Bachelor - Applied Informatics - Application Development",
+    "title": "Fullstack .NET Developer - Heist-op-den-Berg",
+    "overview": "Fullstack .NET Developer - Heist-op-den-Berg",
+    "vitarum": "https://vitarum.euri.com/#/resumes/public/Maarten-Salien/4y0xvLQoA",
+    "description": "Maarten is a talented and ambitious junior .NET Developer with a flair for React. Despite his junior status, Maarten has already proven himself as a standout developer with an impressive range of skills and a passion for creating dynamic and user-friendly web applications.\n\nAs a continuous learner, Maarten is always on the lookout for ways to enhance his skills and stay current with industry trends. He actively seeks out challenges and takes on personal projects to further expand his knowledge, making him a dynamic and versatile developer with a hunger for growth.\n\nIf you're looking for a junior .NET Developer who brings React expertise to the table and is eager to make an impact, Maarten is the ideal candidate. With his blend of technical skills and passion for front-end development, he is ready to take on exciting challenges and carve a successful path in the world of software development."
   },
   "toon-van-hoye": {
     "id": 6,
     "name": "Toon van Hoye",
-    "imageUrl": "/peter.jpeg",
-    "education": "Master in Software Development",
-    "title": "Fullstack JavaScript Developer",
-    "overview": "Lorem Ipsum Dolor Amet Amet Dolor Ipsum Lore",
-    "vitarum": "http://vitarum.euri.com/#/resumes/preview/4y63vi_FC",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dui sit amet ipsum facilisis placerat at non nisi. Suspendisse potenti. Etiam porta ex vel imperdiet pellentesque. Vivamus vitae ipsum eget magna ultricies blandit. Pellentesque mattis ultricies est eget viverra. Sed volutpat in neque in imperdiet. Maecenas non urna tortor. Curabitur consequat quam est, nec mattis dui varius vel. Etiam eros turpis, cursus vel urna in, ornare lacinia lectus. Fusce placerat libero vel metus venenatis, nec ornare urna luctus.\n\nDuis in facilisis velit, eget facilisis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus ut est a purus pretium semper vel at felis. Suspendisse potenti. Donec lectus sapien, eleifend in justo quis, commodo suscipit lectus. Ut purus elit, dictum vitae porttitor nec, tempus quis urna. Praesent porttitor vel ante ac egestas. Mauris rhoncus sapien non enim porta porttitor. Nulla tristique sit amet dolor non mattis. Duis efficitur et sem id pharetra. Phasellus finibus metus augue, sit amet feugiat risus convallis eget. Mauris eleifend molestie dignissim. Quisque eu suscipit ante. Vivamus eu malesuada ante. Suspendisse lobortis rutrum massa, ac porta sem vestibulum ac. In sed risus sed libero maximus tristique."
+    "imageUrl": "/toon-van-hoyter.png",
+    "education": "Professional Bachelor - Computer Software Engineering",
+    "title": "Fullstack .NET Developer - Zwijndrecht",
+    "overview": "Fullstack .NET Developer - Zwijndrecht",
+    "vitarum": "https://vitarum.euri.com/#/resumes/public/Toon-Van-Hoye/V1fODIQj0",
+    "description": "Introducing Toon, an enthusiastic and driven junior full-stack .NET Developer who is seeking his first project to showcase his skills and make a meaningful impact in the world of software development.\n\nAs a recent graduate, Toon has already demonstrated a solid foundation in .NET development. He has completed several academic projects and personal coding challenges, which have allowed him to gain practical experience in both backend and frontend development.  Despite being relatively new to the industry, Toon's passion for technology and his determination to excel set him apart. He actively seeks out opportunities to learn and grow, staying up-to-date with the latest trends and best practices in the .NET ecosystem.\n\nWhat makes Toon a particularly promising junior developer is his innate ability to think critically and approach problem-solving with creativity. He tackles challenges with a positive and can-do attitude, always eager to brainstorm innovative solutions and contribute fresh perspectives to the development process.\n\nHaving completed his academic journey and being on the lookout for his first real-world project, Toon is brimming with excitement and energy. He is determined to prove his worth as a full-stack .NET Developer and is eager to leverage his skills to build meaningful and impactful applications."
   }
 }

@@ -39,56 +39,30 @@ function Contact({ shortlist }: ContactProps) {
     <>
       <div className="content-wrapper">
         <div className={styles["contact-wrapper"]}>
-          <h2 className="h2-left">Boek een Interview</h2>
+          <h2 className="h2-left">Book an Interview</h2>
           <div className={styles["contact-form"]}>
             <p>
-              Laat jouw gegevens gerust achter.
+              Feel free to leave your details.
               <br />
               <br />
-              We noteren jouw gegevens en contacteren je zo snel mogelijk voor
-              een interview met de bootcampers waarvoor u interesse getoont
-              heeft!
+              We note your details and contact you as soon as possible for an interview with the bootcampers for which
+              you have shown interest!
             </p>
             <form onSubmit={handleSubmit}>
-              <Input
-                type="text"
-                value={name}
-                onChange={setName}
-                placeholder="Bedrijfsnaam"
-                required
-              />
-              <Input
-                type="email"
-                value={email}
-                onChange={setEmail}
-                placeholder="E-mail"
-                required
-              />
-              <Input
-                type="tel"
-                value={tel}
-                onChange={setTel}
-                placeholder="Telefoon"
-                required
-              />
+              <Input type="text" value={name} onChange={setName} placeholder="Company Name" required />
+              <Input type="email" value={email} onChange={setEmail} placeholder="E-mail" required />
+              <Input type="tel" value={tel} onChange={setTel} placeholder="Phone" required />
               <Button type="submit" variant="green">
-                Verzenden
+                Send
               </Button>
             </form>
           </div>
         </div>
       </div>
       {openModal && (
-        <div
-          className={styles["modal-wrapper"]}
-          onClick={() => setOpenModal(false)}
-        >
+        <div className={styles["modal-wrapper"]} onClick={() => setOpenModal(false)}>
           <div className={styles.modal}>
-            <CustomImage
-              width={96}
-              imageUrl={"/checkmark.svg"}
-              alt="Checkmark Icon"
-            />
+            <CustomImage width={96} imageUrl={"/checkmark.svg"} alt="Checkmark Icon" />
             <h3>Goed Verzonden</h3>
             <p>
               We hebben je aanvraag succesvol ontvangen!

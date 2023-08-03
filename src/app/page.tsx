@@ -20,7 +20,7 @@ type Bootcamper = {
 
 export default function Home() {
   let searchParams = useSearchParams();
-  const clientName = searchParams.get("firstname") || "Unknown";
+  const clientName = searchParams.get("name") || "Unknown";
 
   const bootcampers: Bootcamper[] = [
     {
@@ -56,23 +56,18 @@ export default function Home() {
   ];
   const [shortlist, setShortlist] = useState<Shortlist>([]);
 
-  const handleChangeShortlist = async (
-    id: number,
-    value: boolean,
-    newShortlist: Shortlist
-  ) => {
-    const bootcamper = bootcampers.find(
-      (bootcamper) => bootcamper.id === id
-    )?.name;
+  const handleChangeShortlist = async (id: number, value: boolean, newShortlist: Shortlist) => {
+    const bootcamper = bootcampers.find((bootcamper) => bootcamper.id === id)?.name;
     setShortlist(newShortlist);
-
-    await addRecord({
+    const record = {
       id,
       clientName,
       action: !!value
         ? `${clientName} heeft ${bootcamper} ge-shortlist`
         : `${clientName} heeft ${bootcamper} van zijn shortlist gehaald`,
-    });
+    };
+    // console.log("record: ", record);
+    await addRecord(record);
   };
   const mapShortList = (): Bootcamper[] => {
     return shortlist
@@ -84,10 +79,7 @@ export default function Home() {
       <Landing />
       <Steps />
       <BootcamperOverview />
-      <BootcamperDetail
-        shortlist={shortlist}
-        onChangeShortlist={handleChangeShortlist}
-      />
+      <BootcamperDetail shortlist={shortlist} onChangeShortlist={handleChangeShortlist} />
       <Shortlist shortlist={mapShortList()} />
       <Contact shortlist={mapShortList()} />
     </main>
