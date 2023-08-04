@@ -9,7 +9,7 @@ function StepsSection() {
     },
     {
       count: 2,
-      description: `During the bootcamp, they take part in a use-case with company value.`,
+      description: `During the bootcamp, they take part in a use-case with company value`,
     },
     {
       count: 3,
