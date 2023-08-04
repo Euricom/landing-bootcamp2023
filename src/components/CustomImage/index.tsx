@@ -4,6 +4,7 @@ import styles from "./customImage.module.scss";
 import Image from "next/image";
 
 interface CustomImageProps {
+  className?: string;
   imageUrl: string;
   alt: string;
   width?: number;
@@ -13,6 +14,7 @@ interface CustomImageProps {
   isCircle?: boolean;
 }
 const CustomImage = ({
+  className,
   imageUrl,
   alt,
   width,
@@ -21,12 +23,13 @@ const CustomImage = ({
   height,
   isCircle,
 }: CustomImageProps) => {
-  const className = isCircle ? styles.circle : styles.base;
+  const layoutClass = isCircle ? styles.circle : styles.base;
+
   return (
     <Image
       width={width}
       height={height || width}
-      className={className}
+      className={[className, layoutClass].join(' ')}
       layout={layout}
       sizes={sizes}
       src={imageUrl}

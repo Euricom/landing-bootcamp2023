@@ -39,23 +39,25 @@ function Contact({ shortlist }: ContactProps) {
     <>
       <div className="content-wrapper">
         <div className={styles["contact-wrapper"]}>
-          <h2 className="h2-left">Book an interview</h2>
-          <div className={styles["contact-form"]}>
-            <p>
-              Feel free to leave your details.
-              <br />
-              <br />
-              We note your details and contact you as soon as possible for an interview with the bootcampers for which
-              you have shown interest!
-            </p>
-            <form onSubmit={handleSubmit}>
-              <Input type="text" value={name} onChange={setName} placeholder="Company Name" required />
-              <Input type="email" value={email} onChange={setEmail} placeholder="Email address" required />
-              <Input type="tel" value={tel} onChange={setTel} placeholder="Phone number" required />
-              <Button type="submit" variant="green">
-                Send
-              </Button>
-            </form>
+          <div className={styles.container}>
+            <h2 className="h2-left">Book an interview</h2>
+            <div className={styles["contact-form"]}>
+              <p>
+                Feel free to leave your details.
+                <br />
+                <br />
+                We note your details and contact you as soon as possible for an interview with the bootcampers for which
+                you have shown interest!
+              </p>
+              <form onSubmit={handleSubmit}>
+                <Input type="text" value={name} onChange={setName} placeholder="Company Name" required />
+                <Input type="email" value={email} onChange={setEmail} placeholder="Email address" required />
+                <Input type="tel" value={tel} onChange={setTel} placeholder="Phone number" required />
+                <Button type="submit" variant="green">
+                  Send
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

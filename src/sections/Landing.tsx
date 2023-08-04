@@ -12,7 +12,7 @@ const LandingSection = () => {
             <CustomImage layout="fill" imageUrl="/logo.svg" alt="Logo of Euricom" />
           </a>
           <h1>Meet our Bootcampers</h1>
-          <h2>Scroll down to and get know them!</h2>
+          <h2>Scroll down and get to know them!</h2>
           <div className={styles["arrow-down-icon-wrapper"]}>
             <div>
               <CustomImage layout="fill" imageUrl="/icon-down.svg" alt="Arrow pointing down" />

@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1440px;
+  margin: auto;
 
   @media (max-width: 1000px) {
     padding: 30px;
@@ -16,8 +18,9 @@
 .steps-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 100px;
+  gap: 55px;
 
   @media (max-width: 1000px) {
     flex-direction: column;

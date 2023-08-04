@@ -5,16 +5,18 @@
   position: absolute;
   top: 35px;
   left: 35px;
+
   @media (max-width: 1000px) {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
   }
 }
+
 .landing {
   width: inherit;
   height: inherit;
-  background: url(/landing-backdrop.png) lightgray 50% / cover no-repeat;
+  background: url(/landing-backdrop.png) 50% / cover no-repeat;
   background-position-y: -100px;
 
   display: flex;

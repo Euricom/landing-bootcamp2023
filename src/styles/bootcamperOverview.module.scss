@@ -1,32 +1,38 @@
+.wrapper {
+  background-color: #062a30;
+}
+
 .overview-wrapper {
   width: inherit;
   height: inherit;
-  background-color: #062a30;
+  align-items: flex-start;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   row-gap: 100px;
   justify-content: center;
+  padding: 112px 50px 160px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 40px;
 
-  padding: 112px 166px 160px 166px;
+  @media (max-width: 600px) {
+    align-items: center;
+    flex-direction: column;
+  }
 
   @media (max-width: 1000px) {
-    padding: 60px 40px;
+    padding: 60px 40px 100px;
     row-gap: 0;
-    > div {
-      flex-direction: column;
-    }
   }
 }
 
 .bootcamper-profile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   width: 325px;
-  padding: 0 17px;
   flex-basis: 33.33%;
   max-width: 325px;
 
