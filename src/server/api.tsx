@@ -31,13 +31,12 @@ export async function sendEmail(data: ContactForm) {
   await collection.insertOne(data);
 
   // send an email
-  const intro =
-    "Beste Practice Managers, Klant X heeft zonet een aanvraag ingediend om ";
+  const intro = "Beste Practice Managers, Klant X heeft zonet een aanvraag ingediend om ";
 
   const bootcampers = data.shortlist.map((item) => `<li>${item.name}</li>`);
   const msg = {
-    to: "thomas.claessens@euri.com", // Change to your recipient
-    from: "interview-request@landingbootcamp2023.com", // Change to your verified sender
+    to: "practicemanagers@euri.com", // Change to your recipient
+    from: "tech@euri.com", // Change to your verified sender
     subject: "Action needed: Nieuw Interview Request",
     html: `
       <h1>Nieuw Interview Request</h1>
